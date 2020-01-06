@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no">
+	<title>MU Season 15 - Open Server M&#7899;i: GLOBAL - 15h 04/01/2020 - &#272;ua top t&#7863;ng Iphone 11 Pro, SS Galaxy...</title>
+	<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400,500,600,700&display=swap&subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Arsenal:400,700&display=swap&subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=vietnamese" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<div id="wrapper">
+		<img id="bg-body" src="images/main-bg.jpg">
+		<header id="header">
+			<div class="container position-relative">
+				<div class="top-bar">
+					<div class="logo">
+						<a href="#"><img src="images/logo.png"></a>
+					</div><!--logo-->
+					<div class="main-menu">
+						<ul>
+							<li class="active">
+								<a href="#">Trang Chủ</a>
+							</li>
+							<li>
+								<a href="#">Đua Top<br> Cấp Độ</a>
+							</li>
+							<li>
+								<a href="">ĐUA TOP<br> BANG HỘI (GUILD)</a>
+							</li>
+							<li>
+								<a href="#">đua top<br> Phú hộ</a>
+							</li>
+							<li>
+								<a href="">event<br> open beta</a>
+							</li>
+						</ul>
+					</div>
+				</div><!--top-bar-->				
+			</div>
+		</header>
+		<div id="main-content">
+			<div class="container">
+				<div class="content-align">
+					<img src="images/bg-event-home.png">
+				</div>
+			</div>
+			<div id="particles-js"></div>
+		</div><!--main-content-->
+		<footer id="footer">
+			<div class="container">
+				<div class="cp-right">
+					<p>Mu Season 15. Phát Triển & Vận hành Bởi MU KINGDOM. Bản quyền thuộc <a href="#"><img src="images/webzen-logo.png"></a>WEBZEN 2019</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/fire.js"></script>
+	<script>
+		function sizeimg(){
+			var heightw = $(window).height();
+			console.log(heightw);
+			var img = document.getElementById('bg-body'); 
+			//or however you get a handle to the IMG
+			var width = img.clientWidth;
+			var height = img.clientHeight;
+			$('#wrapper').css('min-height', height);
+			$('#main-content').css('min-height', height);
+		}
+		$( window ).on( "load", function() {
+			sizeimg();
+		});	
+		$(window).on('resize', function(){
+			sizeimg();
+		});	
+	</script>
+	<script>
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$('#wrapper').addClass('mobile_wp');
+		}
+	</script>
+</body>
+</html>

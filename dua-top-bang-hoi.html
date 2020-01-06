@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="user-scalable=no">
+	<title>MU Season 15 - Open Server M&#7899;i: GLOBAL - 15h 04/01/2020 - &#272;ua top t&#7863;ng Iphone 11 Pro, SS Galaxy...</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">	
+</head>
+<body>
+	<div id="wrapper" style="background: #000000 url('images/bg-top-bang-hoi.jpg') no-repeat;">
+		<img id="bg-body" src="images/bg-top-bang-hoi.jpg">
+		<header id="header">
+			<div class="container position-relative">
+				<div class="top-bar">
+					<div class="logo">
+						<a href="#"><img src="images/logo.png"></a>
+					</div><!--logo-->
+					<div class="main-menu">
+						<ul>
+							<li>
+								<a href="#">Trang Chủ</a>
+							</li>
+							<li>
+								<a href="#">Đua Top<br> Cấp Độ</a>
+							</li>
+							<li>
+								<a href="">ĐUA TOP<br> BANG HỘI (GUILD)</a>
+							</li>
+							<li class="active">
+								<a href="#">đua top<br> Phú hộ</a>
+							</li>
+							<li>
+								<a href="">event<br> open beta</a>
+							</li>
+						</ul>
+					</div>
+				</div><!--top-bar-->				
+			</div>
+		</header>
+		<div id="main-content" class="page-dua-top-bang-hoi">
+			<div class="container">
+				<div class="content-align text-center">
+					<div class="content-top mb-5">
+						<img src="images/title-bang-hoi.png">
+						<p>
+							<img src="images/ic-load.png" class="mr-3"> <span>Thời gian diễn ra:</span> 15h 04/01/2020- 15h 29/01/2020. Kết quả sẽ được tổng kết lúc: 15h 29/01/2020
+						</p>
+						<p>
+							<img src="images/ic-address.png" class="mr-3"> <span>Địa điểm nhận giải:</span> Văn Phòng KDG: 23-25 Trần Nhật Duật, P. Tân Định, Quận 1, TP.HCM
+						</p>
+						<p>
+							<img src="images/ic-win.png" class="mr-3"> <span>Cách thức tính giải:</span>  Dựa theo bảng Top Guild tại đường link: <a href="https://muid.kingdomgame.co/rankings/guilds">https://muid.kingdomgame.co/rankings/guilds</a>
+						</p>
+					</div>
+					<div class="row fix_width">
+						<div class="col-6">
+							<img src="images/img-bang-hoi1.png">
+						</div>
+						<div class="col-6">
+							<img src="images/img-bang-hoi2.png">
+						</div>
+						<div class="col-6 offset-3 mt-4">
+							<img src="images/img-bang-hoi3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="particles-js"></div>
+		</div><!--main-content-->
+		<footer id="footer">
+			<div class="container">
+				<div class="cp-right">
+					<p>Mu Season 15. Phát Triển & Vận hành Bởi MU KINGDOM. Bản quyền thuộc <a href="#"><img src="images/webzen-logo.png"></a>WEBZEN 2019</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/particles.min.js"></script>
+	<script src="js/fire.js"></script>
+	<script>
+		function sizeimg(){
+			var heightw = $(window).height();
+			console.log(heightw);
+			var img = document.getElementById('bg-body'); 
+			//or however you get a handle to the IMG
+			var width = img.clientWidth;
+			var height = img.clientHeight;
+			$('#wrapper').css('min-height', height);
+			$('#main-content').css('min-height', height);
+		}
+		$( window ).on( "load", function() {
+			sizeimg();
+		});	
+		$(window).on('resize', function(){
+			sizeimg();
+		});	
+	</script>
+	<script>
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$('#wrapper').addClass('mobile_wp');
+		}
+	</script>
+</body>
+</html>
