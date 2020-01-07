@@ -37,6 +37,15 @@ html{
 	background: #000;
 	height: 100%;
 }
+.fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    background: 0 0;
+    animation: slide-down .7s;
+}
 .container{
 	max-width: 1200px;
 }
