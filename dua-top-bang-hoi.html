@@ -15,24 +15,24 @@
 			<div class="container position-relative">
 				<div class="top-bar">
 					<div class="logo">
-						<a href="#"><img src="images/logo.png"></a>
+						<a href="http://idpage.kingdomgame.org/test"><img src="images/logo.png"></a>
 					</div><!--logo-->
 					<div class="main-menu">
 						<ul>
 							<li>
-								<a href="#">Trang Chủ</a>
+								<a href="http://idpage.kingdomgame.org/test">Trang Chủ</a>
 							</li>
 							<li>
-								<a href="#">Đua Top<br> Cấp Độ</a>
-							</li>
-							<li>
-								<a href="">ĐUA TOP<br> BANG HỘI (GUILD)</a>
+								<a href="http://idpage.kingdomgame.org/test/dua-top-cap-do.html">Đua Top<br> Cấp Độ</a>
 							</li>
 							<li class="active">
-								<a href="#">đua top<br> Phú hộ</a>
+								<a href="http://idpage.kingdomgame.org/test/dua-top-bang-hoi.html">ĐUA TOP<br> BANG HỘI (GUILD)</a>
 							</li>
 							<li>
-								<a href="">event<br> open beta</a>
+								<a href="http://idpage.kingdomgame.org/test/dua-top-phu-ho.html">đua top<br> Phú hộ</a>
+							</li>
+							<li>
+								<a href="http://idpage.kingdomgame.org/test/event.html">event<br> open beta</a>
 							</li>
 						</ul>
 					</div>
@@ -98,6 +98,15 @@
 		$(window).on('resize', function(){
 			sizeimg();
 		});	
+	</script>
+	<script>
+		$(window).bind('scroll', function () {
+	        if ($(window).scrollTop() > 50) {
+	            $('#header').addClass('fixed');
+	        } else {
+	            $('#header').removeClass('fixed');
+	        }
+	    });
 	</script>
 	<script>
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
